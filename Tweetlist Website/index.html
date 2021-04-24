@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/tweet.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container home-page">
+            <div class="navigation-container">
+                <div class="navigation">
+
+            
+                <div class="logo">
+
+                    <i class="fab fa-twitter"></i>
+
+                </div>
+
+                <div class="home-link">
+
+                    <i class="fas fa-home"></i>
+
+                </div>
+
+                <div class="profile-container">
+
+                    <div class="profile">
+
+                    </div>
+
+                </div>
+
+                </div>
+            
+
+            </div>
+
+        <div class="main">
+
+                <div class="tweets-search-container">
+
+                    <input id="user-search-input" type="text" placeholder="Search Twitter" onkeyup="onEnter(event)"/>
+                    <i class="fas fa-search fa-flip-horizontal" onclick="getTwitterData()"></i>
+
+
+                </div>
+
+                <div class="tweets-list">
+
+                    <div class="tweet-container">
+
+                        <div class="tweet-user-info">
+
+                            <div class="tweet-user-profile">
+
+                            </div>
+
+                            <div class="tweet-user-name-container">
+
+                                <div class="tweet-user-fullname">
+                                    Vo Duc Dung
+                                </div>
+
+                                <div class="tweet-user-username">
+                                    @LOLTROLL
+                                </div>
+
+                            </div>
+
+
+
+                        
+                        </div>
+
+                        <div class="tweet-images-container">
+                                <div class="tweet-image"></div>
+
+                        </div>
+
+                        <div class="tweet-text-container">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+
+                        </div>
+
+                        <div class="tweet-date-container">
+                            20 hours ago
+                        </div>
+
+                    </div>
+
+               
+               
+               
+                </div>
+
+                <div class="next-page-container" id="next-page" onclick="onNextPage()">
+
+                    <i class="fas fa-arrow-down"></i>
+
+                </div>
+
+            </div>
+
+        <div class="tweets-sidebar-container">
+
+                <div class="tweets-sidebar">
+
+                    <div class="tweets-trending">
+
+                        <h5>Trends for you</h5>
+                        <ul>
+                            <li onclick="selectTrend(this)">#Coding</li>
+                            <li onclick="selectTrend(this)">#JavaScript</li>
+                            <li onclick="selectTrend(this)"">#Python</li>
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <script src="js/index.js" async defer></script>
+    </body>
+</html>
