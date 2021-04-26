@@ -17,7 +17,6 @@ class Twitter{
             headers: {
     
                 "Authorization": `Bearer ${process.env.TWITTER_API_TOKEN}`
-                //"Authorization": "Bearer AAAAAAAAAAAAAAAAAAAAALz2NgEAAAAAv2t4CxLqg9lanDpszsZsq2FIryI%3DvRPiyQgG8AfCb6vROnjtlJbk4z1V2laHyA0yrqXw6VzlHnnBoj"
             }
     
         })
